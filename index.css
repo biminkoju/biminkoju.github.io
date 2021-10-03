@@ -1,0 +1,14 @@
+body {
+    background-color: #283747;
+    background-image: image-set("./assets/");
+}
+h1 {
+    font-style: italic;
+    color: white;
+}
+hr {
+    color: dimgray;
+}
+p {
+    color: white;
+}

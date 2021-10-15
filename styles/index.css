@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: #151d21;
+    background-image: url("../assets/bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "roboto";
+    margin-left: 42px;
+    margin-top: 42px;
+}
+p {
+    font-size: large;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover {
+    color: #ff7a7a;
+}
+ul {
+    font-size: large;
+    margin-left: 50px;
+    margin-right: 50px;
+}

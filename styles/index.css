@@ -4,6 +4,6 @@
     padding: 0;
     font-family: "roboto";
 }
-html {
-    scroll-behavior: smooth;
+@media screen{
+    
 }

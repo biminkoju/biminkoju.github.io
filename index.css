@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+:root{
+  font-family: "roboto";
+  --primary-text:#ecf0f1;
+  --primary-background:#000000;
+  font-size:18px;
+}
+body{
+    background-color:  var(--primary-background) ;
+    color:var(--primary-text);
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+}
+body::-webkit-scrollbar{
+  width: 0.25rem;
+}
+body::-webkit-scrollbar-thumb{
+    background:  #515a5a ;
+}
+main{
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.navbar{
+  width:5rem;
+  height: 100vh;
+  position: fixed;
+  background-color:var(--primary-background);
+}
+
+
+
+.container {
+  max-width: 750px;
+  margin: 50px auto;
+  height: 100%;
+}
+button.colapsable {
+  font-size: 25px;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition:0.2s linear;
+    background-color: var(--primary-background);
+    color: var(--primary-text);
+  }
+  button.colapsable:after {
+    content: '(>)';
+    float: left;
+  }
+  button.colapsable.is-open:after {
+    content: '(v)';
+  }
+  .colapsable-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+  }  
+
+  @keyframes textShine {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  pre {
+    font-size: clamp(.5rem, .5vw, .5rem);
+    text-align: center;
+    font-weight: bold;
+    margin: 5px;
+    background: linear-gradient(
+      to right,
+      #7953cd 20%,
+      #00affa 30%,
+      #0190cd 70%,
+      #764ada 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 1s ease-in-out infinite alternate;
+  }
+  
